@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/icon.ico">
+
+    <title>爱运动管理平台</title>
+
+    <link href="css/plugin/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugin/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/theme-default.css" rel="stylesheet">
+</head>
+<body>
+
+<!--contents-->
+<div id="container" class="container-fluid">
+    <!-- left sidebar-->
+    <div id="left-sidebar">
+
+        <div class="col-sm-3 col-md-2 sidebar left-sidebar">
+
+            <div class="logo">
+                <a>爱运动</a>
+            </div>
+
+            <div class="profile">
+                <div class="profile-image center-block text-center">
+                    <img src="img/cat.jpg" alt="user image">
+
+                </div>
+                <div class="profile-data text-center">
+                    <div class="profile-data-name">这只猫的名字</div>
+                    <div class="profile-data-info">这只猫的简介放这里</div>
+                </div>
+            </div>
+
+
+            <ul class="nav left-sidebar-items">
+                <li id="button-sidebar-homepage">
+                    <a href="index.html">
+                        <span class="glyphicon glyphicon-home"></span>
+                        <span class="left-sidebar-items-text">我的主页</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-sport">
+                    <a href="sport.html">
+                        <span class="glyphicon glyphicon-flag"></span>
+                        <span class="left-sidebar-items-text">运动信息</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-activity">
+                    <a href="activity.html">
+                        <span class="glyphicon glyphicon-tasks"></span>
+                        <span class="left-sidebar-items-text">活动管理</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-relation">
+                    <a href="relation.html">
+                        <span class="glyphicon glyphicon-link"></span>
+                        <span class="left-sidebar-items-text">社交关系</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-blog">
+                    <a href="blog.html">
+                        <span class="glyphicon glyphicon-globe"></span>
+                        <span class="left-sidebar-items-text">运动博客</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-info">
+                    <a href="info.html">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="left-sidebar-items-text">个人资料</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- right side content-->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <!-- top sidebar -->
+        <div id="top-sidebar">
+
+            <div class="top-sidebar">
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="hidden" role="presentation">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="top-sidebar-text">收藏</span>
+                        </a>
+                    </li>
+                    <li class="hidden" role="presentation">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-question-sign"></span>
+                            <span class="top-sidebar-text">帮助</span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/login.html">
+                            <span class="glyphicon glyphicon-log-out"></span>
+                            <span class="top-sidebar-text">注销</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- lead line buttons-->
+        <ol class="breadcrumb">
+            <li><a href="#">主页</a></li>
+            <li class="active">社交关系</li>
+        </ol>
+        <!-- page contents-->
+        <div id="page-content" class="page-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="list-group relation-friend-list">
+                        <a href="#" class="list-group-item friend-info">
+                            <div class="status status-online"></div>
+                            <img src="img/cat.jpg" class="pull-left friend-image" alt="Dmitry Ivaniuk">
+                            <span class="name">弗朗特斯基</span>
+                            <p class="message">亲爱的朋友你在吗...</p>
+                        </a>
+                        <a href="#" class="list-group-item friend-info">
+                            <div class="status status-online"></div>
+                            <img src="img/cat.jpg" class="pull-left friend-image" alt="Dmitry Ivaniuk">
+                            <span class="name">米开朗琪罗</span>
+                            <p class="message">Hello my friend, how are...</p>
+                        </a>
+                        <a href="#" class="list-group-item friend-info">
+                            <div class="status status-busy"></div>
+                            <img src="img/cat.jpg" class="pull-left friend-image" alt="Dmitry Ivaniuk">
+                            <span class="name">忙碌的人</span>
+                            <p class="message">在吗。有事。</p>
+                        </a>
+                        <a href="#" class="list-group-item friend-info">
+                            <div class="status status-offline"></div>
+                            <img src="img/cat.jpg" class="pull-left friend-image" alt="Dmitry Ivaniuk">
+                            <span class="name">离线的</span>
+                            <p class="message">来开黑吗？</p>
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="btn-group col-md-12 padding-0">
+                            <button class="btn btn-danger col-md-6">
+                                <span class="glyphicon glyphicon-remove"></span>
+                                删除好友
+                            </button>
+                            <button class="btn btn-primary col-md-6">
+                                <span class="glyphicon glyphicon-search"></span>
+                                查找用户
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row padding-0">
+                        <div class="message-box">
+                            <div class="message message-other">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">米开朗琪罗</a>
+                                        <span class="time">07:22</span>
+                                    </div>
+                                    <div class="message-body">
+                                        在吗？
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">我</a>
+                                        <span class="time">07:23</span>
+                                    </div>
+                                    <div class="message-body">
+                                        在。怎么了
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message-other">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">米开朗琪罗</a>
+                                        <span class="time">07:55</span>
+                                    </div>
+                                    <div class="message-body">
+                                        有件事藏在我心里很久了想要告诉你
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">我</a>
+                                        <span class="time">08:12</span>
+                                    </div>
+                                    <div class="message-body">
+                                        什么呢
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message-other">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">米开朗琪罗</a>
+                                        <span class="time">08:13</span>
+                                    </div>
+                                    <div class="message-body">
+                                        我没钱了你能借我点吗
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">我</a>
+                                        <span class="time">08:15</span>
+                                    </div>
+                                    <div class="message-body">
+                                        我也没钱了
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message message-other">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">米开朗琪罗</a>
+                                        <span class="time">08：17</span>
+                                    </div>
+                                    <div class="message-body">
+                                        友尽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="message-image">
+                                    <img src="img/cat.jpg">
+                                </div>
+                                <div class="message-text">
+                                    <div class="message-heading">
+                                        <a class="name">我</a>
+                                        <span class="time">07:23</span>
+                                    </div>
+                                    <div class="message-body">
+                                        好的
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="message-controller">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="请输入发送消息...">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-success">发送</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/plugin/jquery.min.js"></script>
+<script src="js/plugin/bootstrap.min.js"></script>
+<script src="js/plugin/echarts.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/relation.js"></script>
+</body>
+</html>

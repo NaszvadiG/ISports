@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/icon.ico">
+
+    <title>爱运动管理平台</title>
+
+    <link href="css/plugin/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugin/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/theme-default.css" rel="stylesheet">
+</head>
+<body>
+
+<!--contents-->
+<div id="container" class="container-fluid">
+    <!-- left sidebar-->
+    <div id="left-sidebar">
+
+        <div class="col-sm-3 col-md-2 sidebar left-sidebar">
+
+            <div class="logo">
+                <a>爱运动</a>
+            </div>
+
+            <div class="profile">
+                <div class="profile-image center-block text-center">
+                    <img src="img/cat.jpg" alt="user image">
+
+                </div>
+                <div class="profile-data text-center">
+                    <div class="profile-data-name">这只猫的名字</div>
+                    <div class="profile-data-info">这只猫的简介放这里</div>
+                </div>
+            </div>
+
+
+            <ul class="nav left-sidebar-items">
+                <li id="button-sidebar-homepage">
+                    <a href="index.html">
+                        <span class="glyphicon glyphicon-home"></span>
+                        <span class="left-sidebar-items-text">我的主页</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-sport">
+                    <a href="sport.html">
+                        <span class="glyphicon glyphicon-flag"></span>
+                        <span class="left-sidebar-items-text">运动信息</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-activity">
+                    <a href="activity.html">
+                        <span class="glyphicon glyphicon-tasks"></span>
+                        <span class="left-sidebar-items-text">活动管理</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-relation">
+                    <a href="relation.html">
+                        <span class="glyphicon glyphicon-link"></span>
+                        <span class="left-sidebar-items-text">社交关系</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-blog">
+                    <a href="blog.html">
+                        <span class="glyphicon glyphicon-globe"></span>
+                        <span class="left-sidebar-items-text">运动博客</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-info">
+                    <a href="info.html">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="left-sidebar-items-text">个人资料</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- right side content-->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <!-- top sidebar -->
+        <div id="top-sidebar">
+
+            <div class="top-sidebar">
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="hidden" role="presentation">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="top-sidebar-text">收藏</span>
+                        </a>
+                    </li>
+                    <li class="hidden" role="presentation">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-question-sign"></span>
+                            <span class="top-sidebar-text">帮助</span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/login.html">
+                            <span class="glyphicon glyphicon-log-out"></span>
+                            <span class="top-sidebar-text">注销</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- lead line buttons-->
+        <ol class="breadcrumb">
+            <li><a href="#">主页</a></li>
+            <li class="active">社交关系</li>
+        </ol>
+        <!-- page contents-->
+        <div id="page-content" class="page-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="relation-tree"></div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="relation-chat-dialog">
+                            <div class="row">
+                                <span class="col-md-12 relation-chat-title text-center">nickname1</span>
+                                <span class="col-md-12 relation-chat-separator"></span>
+                            </div>
+                            <div class="row">
+                                <div class="panel panel-default">
+                                    <div class="panel-body bg-success">
+                                        你好吗?
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        我很好。
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body bg-success">
+                                        你家人好吗?
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        我家人也很好。
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="col-md-12 relation-chat-separator"></span>
+                            <div class="row">
+                                <textarea class="col-md-12" rows="3" placeholder="请输入发送内容"></textarea>
+                                <button class="col-md-12 btn btn-success">发送消息</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/plugin/jquery.min.js"></script>
+<script src="js/plugin/bootstrap.min.js"></script>
+<script src="js/plugin/echarts.min.js"></script>
+<script src="js/plugin/bootstrap-treeview.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/relation.js"></script>
+</body>
+</html>

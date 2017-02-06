@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/icon.ico">
+
+    <title>爱运动管理平台</title>
+
+    <link href="css/plugin/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugin/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/theme-default.css" rel="stylesheet">
+</head>
+<body>
+
+<!--contents-->
+<div id="container" class="container-fluid">
+    <!-- left sidebar-->
+    <div id="left-sidebar">
+
+        <div class="col-sm-3 col-md-2 sidebar left-sidebar">
+
+            <div class="logo">
+                <a>爱运动</a>
+            </div>
+
+            <div class="profile">
+                <div class="profile-image center-block text-center">
+                    <img src="img/cat.jpg" alt="user image">
+
+                </div>
+                <div class="profile-data text-center">
+                    <div class="profile-data-name">这只猫的名字</div>
+                    <div class="profile-data-info">这只猫的简介放这里</div>
+                </div>
+            </div>
+
+
+            <ul class="nav left-sidebar-items">
+                <li id="button-sidebar-homepage">
+                    <a href="index.html">
+                        <span class="glyphicon glyphicon-home"></span>
+                        <span class="left-sidebar-items-text">我的主页</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-sport">
+                    <a href="sport.html">
+                        <span class="glyphicon glyphicon-flag"></span>
+                        <span class="left-sidebar-items-text">运动信息</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-activity">
+                    <a href="activity.html">
+                        <span class="glyphicon glyphicon-tasks"></span>
+                        <span class="left-sidebar-items-text">活动管理</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-relation">
+                    <a href="relation.html">
+                        <span class="glyphicon glyphicon-link"></span>
+                        <span class="left-sidebar-items-text">社交关系</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-blog">
+                    <a href="blog.html">
+                        <span class="glyphicon glyphicon-globe"></span>
+                        <span class="left-sidebar-items-text">运动博客</span>
+                    </a>
+                </li>
+                <li id="button-sidebar-info">
+                    <a href="info.html">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="left-sidebar-items-text">个人资料</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- right side content-->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <!-- top sidebar -->
+        <div id="top-sidebar">
+
+            <div class="top-sidebar">
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="hidden" role="presentation">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="top-sidebar-text">收藏</span>
+                        </a>
+                    </li>
+                    <li class="hidden" role="presentation">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-question-sign"></span>
+                            <span class="top-sidebar-text">帮助</span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="/login.html">
+                            <span class="glyphicon glyphicon-log-out"></span>
+                            <span class="top-sidebar-text">注销</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- lead line buttons-->
+        <ol class="breadcrumb">
+            <li><a href="#">主页</a></li>
+            <li class="active">个人资料</li>
+        </ol>
+        <!-- page contents-->
+        <div id="page-content" class="page-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default info-panel">
+
+                        <div class="panel-heading">
+                            我的资料卡
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="input-info-nickname" class="col-md-2 control-label">昵称</label>
+                                    <div class="col-md-10">
+                                        <input type="text" id="input-info-nickname" class="form-control" name="nickname">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">性别</label>
+                                    <div class="col-md-10">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" id="sex1" value="male"> 男
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="sex" id="sex2" value="female"> 女
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-info-birth" class="col-md-2 control-label">生日</label>
+                                    <div class="col-md-10">
+                                        <input type="date" id="input-info-birth" class="form-control" name="birth">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-info-inplace" class="col-md-2 control-label">所在地</label>
+                                    <div class="col-md-10">
+                                        <input type="text" id="input-info-inplace" class="form-control" name="inplace">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-info-name" class="col-md-2 control-label">姓名</label>
+                                    <div class="col-md-10">
+                                        <input type="text" id="input-info-name" class="form-control" name="name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-info-tel" class="col-md-2 control-label">联系方式</label>
+                                    <div class="col-md-10">
+                                        <input type="tel" maxlength="11" id="input-info-tel" class="form-control" name="tel">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-info-email" class="col-md-2 control-label">邮箱</label>
+                                    <div class="col-md-10">
+                                        <div class="input-group">
+                                            <input type="email" id="input-info-email" class="form-control" name="email">
+                                            <div class="input-group-addon">@</div>
+                                            <input type="email" id="input-info-email-end" class="form-control" name="email-end">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-info-address" class="col-md-2 control-label">地址</label>
+                                    <div class="col-md-10">
+                                        <input type="text" id="input-info-address" class="form-control" name="address">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-info-code" class="col-md-2 control-label">邮编</label>
+                                    <div class="col-md-10">
+                                        <input type="text" maxlength="6" id="input-info-code" class="form-control" name="code">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-activity-info" class="col-md-2 control-label">个性签名</label>
+                                    <div class="col-md-10">
+                                        <textarea id="input-activity-info" class="form-control" name="info" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-2">
+                                        <button type="button" class="btn btn-primary col-md-12">提交修改信息</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/plugin/jquery.min.js"></script>
+<script src="js/plugin/bootstrap.min.js"></script>
+<script src="js/plugin/echarts.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/activity.js"></script>
+</body>
+</html>
